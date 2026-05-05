@@ -1,7 +1,11 @@
-import "./App.css";
+import Container from "./components/Container";
 
 function App() {
-  return <div className="text-3xl font-mono text-sky-600 sm:text-2xl sm:text-black">Sumon Debnath!</div>;
+  return (
+    <Container>
+      <h1 className="text-3xl font-mono ">Sumon Debnath!</h1>
+    </Container>
+  );
 }
 
 export default App;

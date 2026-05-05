@@ -11,3 +11,7 @@
   --breakpoint-2xl: 96rem; /* 1536px — default */
   --breakpoint-3xl: 120rem; /* 1920px */
 }
+
+body {
+  @apply bg-[#0f172a] text-slate-300;
+}
