@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-xs: 20rem; /* 320px  — custom */
-  --breakpoint-xm: 24rem; /* 375px  — custom */
-  --breakpoint-xl: 27rem; /* 425px  — custom */
+  --breakpoint-xs: 20rem; /*320px  — custom */
+  --breakpoint-xm: 24rem; /*375px  — custom */
+  --breakpoint-xx: 27rem; /* 425px  — custom */
   --breakpoint-sm: 40rem; /* 640px  — default */
   --breakpoint-md: 48rem; /* 768px  — default */
   --breakpoint-lg: 64rem; /* 1024px — default */
@@ -12,6 +12,46 @@
   --breakpoint-3xl: 120rem; /* 1920px */
 }
 
-body {
-  @apply bg-[#0f172a] text-slate-300;
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-surface);
+    @apply bg-[#0f172a] text-slate-100;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  p {
+    font-family: var(--font-display);
+    font-weight: 350;
+    line-height: 1.6;
+
+    @apply text-slate-300;
+  }
 }
