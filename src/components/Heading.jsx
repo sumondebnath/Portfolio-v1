@@ -1,3 +1,11 @@
-export const Heading = ({ name }) => {
-  return <h1>{name}</h1>;
+import { DIV, H1, H2, P } from "./Tags";
+
+export const Heading = ({ name, designation, description }) => {
+  return (
+    <DIV>
+      <H1>{name}</H1>
+      <H2>{designation}</H2>
+      <P>{description}</P>
+    </DIV>
+  );
 };
