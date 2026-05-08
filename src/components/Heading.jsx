@@ -1,3 +1,3 @@
-// export default function Heading({}) {
-//   return <h1></h1>;
-// }
+export const Heading = ({ name }) => {
+  return <h1>{name}</h1>;
+};
